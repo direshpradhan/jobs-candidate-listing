@@ -1,11 +1,14 @@
 import "./App.css";
 import { CandidateTable } from "./components/CandidateTable";
+import { Nav } from "./components/Nav";
 
 function App() {
   return (
     <div className="App">
-      <h2>Ditto Jobs</h2>
-      <CandidateTable />
+      <Nav />
+      <div className="table-container">
+        <CandidateTable />
+      </div>
     </div>
   );
 }

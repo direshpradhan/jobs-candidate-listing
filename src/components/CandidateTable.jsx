@@ -54,14 +54,21 @@ export function CandidateTable() {
                 "&:last-child td, &:last-child th": { border: 0 },
               }}
             >
-              <TableCell component="th" scope="row" align="left">
+              <TableCell
+                component="th"
+                scope="row"
+                align="left"
+                sx={{ padding: "0.5rem 1rem" }}
+              >
                 <div className="candidate">
                   <img className="img" src={item.image} alt="" />
                   <span className="name">{item.candidate}</span>
                 </div>
               </TableCell>
-              <TableCell align="left">{item.role}</TableCell>
-              <TableCell align="left">
+              <TableCell align="left" sx={{ padding: "0.5rem 1rem" }}>
+                {item.role}
+              </TableCell>
+              <TableCell align="left" sx={{ padding: "0.5rem 1rem" }}>
                 {item.last_comms.unread ? (
                   <span className="unread"></span>
                 ) : (
@@ -70,11 +77,13 @@ export function CandidateTable() {
                 {item.last_comms.description}{" "}
                 {item.last_comms.date_time.split(" ")[0]}
               </TableCell>
-              <TableCell align="left">
+              <TableCell align="left" sx={{ padding: "0.5rem 1rem" }}>
                 R{item.salary.toString().slice(0, 2)}{" "}
                 {item.salary.toString().slice(2)}
               </TableCell>
-              <TableCell align="left">{item.sent_by}</TableCell>
+              <TableCell align="left" sx={{ padding: "0.5rem 1rem" }}>
+                {item.sent_by}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
