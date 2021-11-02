@@ -17,3 +17,27 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+.img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.unread {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.read {
+  margin-right: 1rem;
+}
+
+.candidate {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
