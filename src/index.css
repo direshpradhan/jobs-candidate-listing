@@ -19,7 +19,7 @@ code {
 }
 
 .table-container {
-  width: 70%;
+  width: 80%;
   margin: 2rem auto;
 }
 
@@ -49,9 +49,45 @@ code {
 
 .navigation {
   background-color: #2a2a2a;
-  padding: 1rem 0.25rem;
+  padding: 0.75rem 0.25rem;
 }
 
 .navigation > img {
   margin-left: 1rem;
+}
+
+.search-filter-container {
+  padding: 0.5rem 0;
+  background-color: white;
+}
+
+.element-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.search {
+  padding: 0.75rem 0.5rem;
+  border: 1px solid #a6acaf;
+  border-radius: 0.25rem;
+  width: 15rem;
+  font-size: 12pt;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0;
+  left: 13rem;
+  color: #a6acaf;
+}
+
+.archive {
+  font-size: 13pt;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
