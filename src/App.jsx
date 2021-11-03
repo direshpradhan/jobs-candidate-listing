@@ -2,14 +2,21 @@ import "./App.css";
 import { CandidateTable } from "./components/CandidateTable";
 import { Nav } from "./components/Nav";
 import { SearchAndFilter } from "./components/SearchAndFilter";
+import data from "./interviews.json";
+import { useState } from "react";
 
 function App() {
+  const [candidateData, setCandidateData] = useState(data);
+
   return (
     <div className="App">
       <Nav />
-      <SearchAndFilter />
+      <SearchAndFilter
+        candidateData={candidateData}
+        setData={setCandidateData}
+      />
       <div className="table-container">
-        <CandidateTable />
+        <CandidateTable data={candidateData} setData={setCandidateData} />
       </div>
     </div>
   );

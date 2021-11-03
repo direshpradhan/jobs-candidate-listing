@@ -1,5 +1,4 @@
 import React from "react";
-import data from "../interviews.json";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -8,7 +7,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-export function CandidateTable() {
+export function CandidateTable({ data }) {
   return (
     <>
       <TableContainer component={Paper}>
