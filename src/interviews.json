@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "image": "https://www.filepicker.io/api/file/zpPP5saTlywu9rYeGd1g/convert?fit=crop&h=200&w=200",
     "candidate": "Jaco du Toit",
     "role": "Front-end developer",
@@ -14,6 +15,7 @@
     "archived": false
   },
   {
+    "id": 2,
     "image": "https://www.filepicker.io/api/file/a46tKdb2RTS0hUbOeGjw/convert?fit=crop&h=200&w=200",
     "candidate": "Gys Muller",
     "role": "Java developer",
@@ -28,6 +30,7 @@
     "archived": false
   },
   {
+    "id": 3,
     "image": "https://www.filepicker.io/api/file/fCT91jHRvWb7KHEa4ZoY/convert?fit=crop&h=200&w=200",
     "candidate": "Philip Joubert",
     "role": "",
@@ -42,6 +45,7 @@
     "archived": true
   },
   {
+    "id": 4,
     "image": "https://www.filepicker.io/api/file/MzoNGuE4QKCy0WiNklIK/convert?fit=crop&h=200&w=200",
     "candidate": "Lara Morris",
     "role": "Ruby engineer",
@@ -49,13 +53,14 @@
     "last_comms": {
       "unread": false,
       "description": "Lara replied",
-      "date_time": "2018-10-093 12:09:51"
+      "date_time": "2018-10-09 12:09:51"
     },
     "sent_by": "Pieter van der Merwe",
     "status": "Declined",
     "archived": false
   },
   {
+    "id": 5,
     "image": "https://www.filepicker.io/api/file/MzoNGuE4QKCy0WiNklIK/convert?fit=crop&h=200&w=200",
     "candidate": "Marike Brown",
     "role": "UI designer",
@@ -70,6 +75,7 @@
     "archived": false
   },
   {
+    "id": 6,
     "image": "https://www.filepicker.io/api/file/MzoNGuE4QKCy0WiNklIK/convert?fit=crop&h=200&w=200",
     "candidate": "Laura Manzur",
     "role": "React engineer",
@@ -84,6 +90,7 @@
     "archived": true
   },
   {
+    "id": 7,
     "image": "https://www.filepicker.io/api/file/VHvCl3g2TaKr9XZcs4zH/convert?fit=crop&h=200&w=200",
     "candidate": "Peter Scott",
     "role": "JavaScript engineer",

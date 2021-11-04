@@ -7,7 +7,19 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-export function CandidateTable({ data }) {
+export function CandidateTable({ data, setData, showArchive }) {
+  function toggleArchive(id) {
+    const newData = data
+      .map((item) => {
+        if (item.id === id) {
+          item.archived = !item.archived;
+        }
+        return item;
+      })
+      .filter((item) => (showArchive ? item : !item.archived));
+    setData(newData);
+  }
+
   return (
     <>
       <TableContainer component={Paper}>
@@ -95,6 +107,7 @@ export function CandidateTable({ data }) {
                     color: "#40aadb",
                     cursor: "pointer",
                   }}
+                  onClick={() => toggleArchive(item.id)}
                 >
                   {item.archived ? "Unarchive" : "Archive"}
                 </TableCell>

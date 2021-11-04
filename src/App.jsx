@@ -7,6 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [candidateData, setCandidateData] = useState(data);
+  const [showArchive, setShowArchive] = useState(true);
 
   return (
     <div className="App">
@@ -14,9 +15,15 @@ function App() {
       <SearchAndFilter
         candidateData={candidateData}
         setData={setCandidateData}
+        showArchive={showArchive}
+        setShowArchive={setShowArchive}
       />
       <div className="table-container">
-        <CandidateTable data={candidateData} setData={setCandidateData} />
+        <CandidateTable
+          data={candidateData}
+          setData={setCandidateData}
+          showArchive={showArchive}
+        />
       </div>
     </div>
   );

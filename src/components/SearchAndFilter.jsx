@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import originalData from "../interviews.json";
 
-export const SearchAndFilter = ({ setData }) => {
+export const SearchAndFilter = ({ showArchive, setShowArchive, setData }) => {
   const [searchInput, setSearchInput] = useState("");
-  const [showArchive, setShowArchive] = useState(true);
 
   useEffect(() => {
     setData(
